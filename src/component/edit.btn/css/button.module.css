@@ -1,0 +1,6 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}/*# sourceMappingURL=button.module.css.map */
