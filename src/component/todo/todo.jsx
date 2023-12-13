@@ -8,13 +8,13 @@ function reducer(state, action) {
 
 
   switch (action.type) {
-    
+
     case 'add':
       return [...state, action.payload]
     case 'delete':
       return state.filter((x, id) => id !== action.index)
     case 'edit':
-    return state.filter((x,id) => action.index !== id)
+      return state.filter((x, id) => action.index !== id)
     default:
       return state
   }
@@ -31,21 +31,20 @@ function Todo() {
 
   }
 
-console.log(state)
   const editBtn = (index) => {
     const payload = {
       ...state[index],
       control: true
     };
-    
-      
+
+
     setInpValues(payload)
-      dispatch({
-        type: 'edit', index,
-        payload
-      })
-    
-    
+    dispatch({
+      type: 'edit', index,
+      payload
+    })
+
+
 
   }
 
@@ -62,7 +61,7 @@ console.log(state)
 
 
 
-    if (!values.fullname || !isNaN(Number(values.fullname.trim(typeof'number')))) errors.fullname = 'fullname  can"t be empty'
+    if (!values.fullname || !isNaN(Number(values.fullname.trim(typeof 'number')))) errors.fullname = 'fullname  can"t be empty'
     if (!values.age || isNaN(Number(values.age))) errors.age = 'age must be only number'
     if (!values.position) errors.position = 'position can"t be empty'
     if (!values.phone || isNaN(Number(values.phone))) errors.phone = 'phone must be only number'
@@ -77,7 +76,7 @@ console.log(state)
           Todo App
         </h1>
         <Formik
-        enableReinitialize={true}
+          enableReinitialize={true}
           onSubmit={(values) => {
             dispatch({
               type: 'add',
@@ -95,7 +94,7 @@ console.log(state)
             values.position = '';
             values.phone = '';
             values.control = false;
-           
+
           }}
           validate={validate}
 
