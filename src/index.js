@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Add from './component/add/add';
-import Table from './component/table/table';
+import Todo from './component/todo/todo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Add />
+    <Todo />
   
   </React.StrictMode>
 );

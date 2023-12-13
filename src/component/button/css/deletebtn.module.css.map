@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"deletebtn.module.css"}
+{"version":3,"sources":["deletebtn.module.scss","deletebtn.module.css"],"names":[],"mappings":"AAAA;EACI,yBAAA;EACA,kBAAA;EACA,6BAAA;EACA,yBAAA;ACCJ","file":"deletebtn.module.css"}

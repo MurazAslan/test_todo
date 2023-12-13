@@ -4,17 +4,8 @@ import Button from '../button/button'
 // import { ButtonData } from '../buttondata/button_data'
 
 
-function Table({ list, index,deleteBtn }) {
-    // console.log(list)
+function Table({ list, index, deleteBtn, editBtn }) {
 
-    // const deleteBtn = () => {
-    //     // console.log(list)
-    //     const result  = dispatch()
-    //     console.log(result)
-    // } 
-    
-  
-   
 
     return (
         <tr className={style.body} >
@@ -23,12 +14,12 @@ function Table({ list, index,deleteBtn }) {
             <td>{list.position}</td>
             <td>{list.phone}</td>
             <td>
-    
-                <Button text={'edit'} />
+
+                <Button text={'Edit'} onClick={editBtn} />
 
             </td>
             <td>
-                <Button text={'delete'}  onClick={deleteBtn}/>
+                <Button text={'X'} onClick={deleteBtn} />
             </td>
 
         </tr>
